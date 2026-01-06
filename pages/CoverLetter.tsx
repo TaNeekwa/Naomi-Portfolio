@@ -191,7 +191,7 @@ const CoverLetter: React.FC<CoverLetterProps> = ({ onBack }) => {
             <div className={`mt-12 pt-8 border-t border-white/5 flex flex-wrap gap-4 transition-all duration-700 delay-500 ${showContent ? 'opacity-100' : 'opacity-0'}`}>
               <a
                 href="/resume.pdf"
-                download="TaNeekwa_Donley_Resume.pdf"
+                download="Naomi_Donley_Resume.pdf"
                 className="flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-background-dark font-bold text-sm uppercase tracking-wider hover:bg-white transition-colors"
               >
                 <span className="material-symbols-outlined text-[18px]">download</span>
