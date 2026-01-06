@@ -10,7 +10,7 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = ({ id, onViewResume, onViewTools }) => {
   return (
     <section id={id} className="relative min-h-screen flex flex-col justify-center py-24 px-8 sm:px-12 lg:px-24 overflow-hidden">
-      <div className="max-w-[1400px] mx-auto w-full grid lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-[900px] mx-auto w-full">
         <div className="flex flex-col gap-10 animate-slide-up z-10">
           <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-surface-dark border border-white/5 w-fit shadow-xl">
             <span className="relative flex h-2 w-2">
@@ -65,47 +65,6 @@ const Home: React.FC<HomeProps> = ({ id, onViewResume, onViewTools }) => {
               <span className="text-xs uppercase tracking-widest text-neutral-text font-bold">Business Admin</span>
             </div>
           </div>
-        </div>
-
-        <div className="relative group perspective-1000 z-0">
-          <div className="absolute -inset-10 bg-gradient-to-tr from-primary/30 to-transparent rounded-[2rem] blur-[120px] opacity-40 group-hover:opacity-70 transition duration-1000"></div>
-          
-          <div className="relative aspect-[4/5] md:aspect-square w-full max-w-lg mx-auto overflow-hidden rounded-[2rem] bg-surface-dark border border-white/5 shadow-2xl transition-all duration-700 hover:scale-[1.02] hover:border-primary/20">
-            {/* Naomi's Portrait */}
-            <img
-              src="/portrait.jpg"
-              className="absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-105"
-              alt="Naomi F. Donley Professional Portrait"
-            />
-            
-            <div className="absolute bottom-8 left-8 right-8 p-6 rounded-2xl bg-background-dark/40 backdrop-blur-md border border-white/5 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-               <p className="text-white text-sm font-light italic leading-relaxed">
-                 "I enable growth by ensuring that every proposal commitment is operationally achievable and commercially sound."
-               </p>
-            </div>
-          </div>
-
-          {/* Contact Info */}
-          <div className="flex items-center justify-center gap-6 mt-6">
-            <a href="tel:9194410915" className="flex items-center gap-2 text-neutral-text hover:text-primary transition-colors">
-              <span className="material-symbols-outlined text-lg">phone</span>
-              <span className="text-sm font-light">(919) 441-0915</span>
-            </a>
-            <span className="text-white/20">|</span>
-            <a href="mailto:NaomiDonley@outlook.com" className="flex items-center gap-2 text-neutral-text hover:text-primary transition-colors">
-              <span className="material-symbols-outlined text-lg">mail</span>
-              <span className="text-sm font-light">NaomiDonley@outlook.com</span>
-            </a>
-            <span className="text-white/20">|</span>
-            <a href="https://www.linkedin.com/in/taneekwadonley/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-neutral-text hover:text-primary transition-colors">
-              <span className="material-symbols-outlined text-lg">person</span>
-              <span className="text-sm font-light">LinkedIn</span>
-            </a>
-          </div>
-
-          {/* Floating decorative elements */}
-          <div className="absolute -top-6 -right-6 size-24 border border-primary/20 rounded-full animate-float-slow opacity-20"></div>
-          <div className="absolute -bottom-10 -left-10 size-48 border border-white/5 rounded-full animate-pulse-slow opacity-10"></div>
         </div>
       </div>
     </section>
